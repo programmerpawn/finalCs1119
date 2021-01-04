@@ -1,30 +1,31 @@
 #include <iostream>
 #include <vector>
+#include <climits>
 using namespace std;
 
 int main() {
     int userNum;
     cin >> userNum;
+    int small;
+    int secSmall;
 
     vector<int>numList(userNum);
-    int lowerLim;
-    int upperLim;
-    
-    int i = 0;
 
+    int i = 0;
+    small = secSmall = INT_MAX;
     for (i = 0; i < numList.size(); ++i) {
         cin >> numList.at(i);
-    }
+        if (numList[i] < small) {
+            secSmall = small;
+            small = numList[i];
 
-    cin >> lowerLim;
-    cin >> upperLim;
+        }
+        else if (numList[i] < secSmall && numList[i] != small) {
+            secSmall = numList[i];
 
-    for (i=0; i < numList.size(); ++i) {
-        if ((numList[i] <= upperLim) && (numList[i] >= lowerLim)) {
-            cout << numList[i] << " ";
         }
     }
-    cout << endl;
+    cout << small << " " << secSmall << endl;
 
 
     return 0;
