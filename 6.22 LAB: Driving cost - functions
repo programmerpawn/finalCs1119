@@ -1,0 +1,44 @@
+#include <iostream>
+#include <iomanip>               // For setprecision
+using namespace std;
+
+double DrivingCost(double drivenMiles, double milesPerGallon, double dollarsPerGallon) {
+	double costPerMile;
+	costPerMile = (dollarsPerGallon* drivenMiles) / milesPerGallon;
+	return costPerMile;
+}
+double DrivingCostAtTen(double carMile, double gasPrice){
+   double atTenMiles;   
+   atTenMiles = (gasPrice * 10) / carMile;
+   return atTenMiles;
+}
+
+double DrivingCostAtFifty(double carMile, double gasPrice){
+   double atFiftyMiles;
+   
+   
+   atFiftyMiles = (gasPrice * 50) / carMile;
+   return atFiftyMiles;
+}
+
+double DrivingCostAtFour(double carMile, double gasPrice){
+   double atFourMiles;
+   
+   
+   atFourMiles = (gasPrice * 400) / carMile;
+   return atFourMiles;
+}
+
+int main() {
+   double carMiles;
+   double gasPrices;
+   
+   cin >> carMiles;
+   cin >> gasPrices;
+   
+   cout << fixed << setprecision(2) << DrivingCostAtTen(carMiles, gasPrices) << " ";
+   cout << fixed << setprecision(2) << DrivingCostAtFifty(carMiles, gasPrices) << " ";
+   cout << fixed << setprecision(2) << DrivingCostAtFour(carMiles, gasPrices) << endl;
+
+   return 0;
+}
