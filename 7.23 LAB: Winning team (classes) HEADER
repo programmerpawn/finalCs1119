@@ -1,0 +1,30 @@
+#ifndef TEAMH
+#define TEAMH
+
+#include <string>
+
+class Team {
+   // TODO: Declare private data members - teamName, teamWins, teamLosses
+   private:
+   std::string strTeamName;
+   int numTeamWins;
+   int numTeamLosses;
+   
+   public:
+   // TODO: Declare mutator functions - 
+   //       SetTeamName(), SetTeamWins(), SetTeamLosses()
+   void SetTeamName(std::string name);
+   void SetTeamWins(int TeamWins);
+   void SetTeamLosses(int TeamLosses);
+   
+   // TODO: Declare accessor functions - 
+   //       GetTeamName(), GetTeamWins(), GetTeamLosses()
+   std::string GetTeamName() const;
+   int GetTeamWins() const;
+   int GetTeamLosses() const;
+   
+   // TODO: Declare GetWinPercentage()
+   double GetWinPercentage();
+};
+
+#endif
