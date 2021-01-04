@@ -1,0 +1,35 @@
+#ifndef FOODITEMH
+#define FOODITEMH
+
+#include <string>
+
+using namespace std;
+
+class FoodItem {
+   public:
+      // TODO: Declare default constructor
+      FoodItem(){
+         name = "None";
+         fat =0;
+         carbs =0;
+         protein = 0;
+      }
+      // TODO: Declare second constructor with arguments
+      // to initialize private data members
+      FoodItem(string name,double fat,double carbs, double protein);
+
+      string GetName();
+      double GetFat();
+      double GetCarbs();
+      double GetProtein();
+      double GetCalories(double numServings);
+      void PrintInfo();
+
+   private:
+      string name;
+      double fat;
+      double carbs;
+      double protein;
+};
+
+#endif
