@@ -1,0 +1,35 @@
+5.21 LAB: Adjust list by normalizing
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int SCORES_SIZE;
+    cin >> SCORES_SIZE;
+    int smallNum;
+    vector<int> oldScores(SCORES_SIZE);
+    unsigned int i;
+
+
+    for (i = 0; i < oldScores.size(); ++i) {
+        cin >> oldScores.at(i);
+    }
+
+    smallNum = oldScores[0];
+    for (i = 0; i < oldScores.size(); ++i) {
+        if (smallNum > oldScores[i]) {
+            smallNum = oldScores[i];
+        }
+    }
+    for (i = 0; i < oldScores.size(); ++i) {
+        oldScores[i] = oldScores[i] - smallNum;
+    }
+    for (i = 0; i < oldScores.size(); ++i) {
+        cout << oldScores[i] << " ";
+    }
+    
+
+    cout << endl;
+
+    return 0;
+}
