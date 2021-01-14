@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+
+	string userInput;
+	int i = 0;
+	string isNumTrue;
+	string isNumFalse;
+
+	cin >> userInput;
+
+	for (i = 0; i < userInput.length(); i++) {
+		if (isdigit(userInput[i]) == false) {
+			isNumFalse = "no";
+		}
+		else {
+			isNumTrue = "yes";
+		}
+	}
+
+	if (isNumFalse == "no") {
+		cout << "no" << endl;
+	}else if (isNumTrue == "yes") {
+		cout << "yes" << endl;
+	}
+
+
+	return 0;
+}
