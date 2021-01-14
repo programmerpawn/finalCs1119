@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+   int rgbRed;
+   int rgbGreen;
+   int rgbBlue;
+   
+   cin >> rgbRed;
+   cin >> rgbGreen;
+   cin >> rgbBlue;
+   
+   //cout << rgbRed << " ";
+   //cout << rgbGreen << " ";
+   //cout << rgbBlue;
+   
+   if (rgbRed > rgbGreen) {
+      cout << rgbRed - rgbGreen << " ";
+      cout << rgbGreen - rgbGreen << " ";
+      cout << rgbBlue - rgbGreen << endl;
+   }
+   else if (rgbGreen > rgbBlue) {
+      cout << rgbRed - rgbBlue << " ";
+      cout << rgbGreen - rgbBlue << " ";
+      cout << rgbBlue - rgbBlue << endl;
+   }
+   else if (rgbBlue > rgbRed) {
+      cout << rgbRed - rgbRed << " ";
+      cout << rgbGreen - rgbRed << " ";
+      cout << rgbBlue - rgbRed << endl;
+   }
+   else if (rgbRed > rgbBlue) {
+      cout << rgbRed - rgbBlue << " ";
+      cout << rgbGreen - rgbBlue << " ";
+      cout << rgbBlue - rgbBlue << endl;
+   }
+   else if (rgbGreen > rgbRed) {
+      cout << rgbRed - rgbRed << " ";
+      cout << rgbGreen - rgbRed << " ";
+      cout << rgbBlue - rgbRed << endl;
+   }
+   else if (rgbBlue > rgbGreen) {
+      cout << rgbRed - rgbGreen << " ";
+      cout << rgbGreen - rgbGreen << " ";
+      cout << rgbBlue - rgbGreen << endl;
+   }
+   else if (rgbRed >= rgbGreen >= rgbBlue) {
+      cout << "0 0 0" << endl;
+   }
+   else {
+      cout << "0 0 0" << endl;
+   }
+
+   return 0;
+}
