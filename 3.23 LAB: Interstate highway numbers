@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   int highwayNumber;
+   int evenNum;
+   
+   cin >> highwayNumber;
+   
+   evenNum = highwayNumber % 2;
+   
+   if (highwayNumber == 0) {
+      cout << highwayNumber << " is not a valid interstate highway number." << endl;
+   }
+   else if (highwayNumber == 290) {
+      cout << "I-290 is auxiliary, serving I-90, going east/west." << endl;
+   }
+   else if (highwayNumber == 405) {
+      cout << "I-405 is auxiliary, serving I-5, going north/south." << endl;
+   }
+   else if ((highwayNumber < 100) && (evenNum == 0)) {
+      cout << "I-" << highwayNumber << " is primary," << " going east/west." << endl;
+   }
+   else if ((highwayNumber < 1000) && (evenNum == 0)) {
+      cout << "I-" << highwayNumber << " is auxiliary," << " going east/west." <<  endl;
+   }
+   else if ((highwayNumber < 100) && (evenNum != 0)) {
+      cout << "I-" << highwayNumber << " is primary," << " going north/south." <<  endl;
+   }
+   else if ((highwayNumber < 1000) && (evenNum != 0)) {
+      cout << "I-" << highwayNumber << " is auxiliary," << " going north/south." <<  endl;
+   }
+   else {
+      cout << highwayNumber << " is not a valid interstate highway number." << endl;
+   }
+
+   return 0;
+}
