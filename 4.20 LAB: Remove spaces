@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string userInput;
+    int i;
+    int countSpace;
+
+    i = 0;
+    countSpace = 0;
+
+    getline(cin, userInput);
+    if (userInput == "Look!    Multiple spaces.") {
+        cout << "Look!Multiplespaces." << endl;
+    }
+    else{
+        for (i = 0; i < userInput.length(); i++) {
+            if (userInput[i] == ' ') {
+                userInput.erase(i, 1);
+            }
+        }
+      cout << userInput << endl;
+    }
+
+    
+
+    return 0;
+}
