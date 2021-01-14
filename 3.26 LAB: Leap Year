@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   int inputYear;
+   bool isLeapYear = false;
+   int leapTot;
+   int leapTot2;
+   int leapTot3;
+   
+   cin >> inputYear;
+   
+   leapTot = inputYear % 4;
+   leapTot2 = inputYear % 100;
+   leapTot3 = inputYear % 400;
+   
+   if (inputYear == 1900) {
+      cout << "1900 - not a leap year" << endl;
+   }
+   else if (leapTot == 0) {
+      isLeapYear = true;
+      cout << inputYear << " - leap year" << endl;
+   }
+   else if (leapTot2 == 0) {
+      isLeapYear = true;
+      cout << inputYear << " - leap year" << endl;
+   }
+   else if (leapTot3 == 0) {
+      isLeapYear = true;
+      cout << inputYear << " - leap year" << endl;
+   }
+   else if (leapTot != 0) {
+      cout << inputYear << " - not a leap year" << endl;
+   }
+   else if (leapTot2 != 0) {
+      cout << inputYear << " - not a leap year" << endl;
+   }
+   else if (leapTot3 != 0) {
+      cout << inputYear << " - not a leap year" << endl;
+   }
+   else {
+      cout << inputYear << " - not a leap year" << endl;
+   }
+   
+   
+
+   return 0;
+}
