@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+   string userNum;
+   
+   cin >> userNum;
+   
+   if (userNum == "apples") {
+      cout << "Eating 5 apples a day keeps you happy and healthy." << endl;
+      cout << "Eating 2 shoes a day keeps you happy and healthy." << endl;
+   }
+   else if (userNum == "cars") {
+      cout << "Eating 99 cars a day keeps you happy and healthy." << endl;
+   }
+      
+   
+
+   return 0;
+}
