@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>      // Supports use of "string" data type
+using namespace std;
+
+int main() {
+   int    userInt;
+   double userDouble;
+   char alpha;
+   string word;
+   
+   
+   cout << "Enter integer:" << endl;
+   cin  >> userInt;
+   
+   cout << "Enter double:" << endl;
+   cin >> userDouble;
+   
+   cout << "Enter character:" << endl;
+   cin >> alpha;
+   
+   cout << "Enter string:" << endl;
+   cin >> word;
+   
+   cout << userInt << " " << userDouble << " " << alpha << " " << word << endl;
+   cout << word << " " << alpha << " " << userDouble << " " << userInt << endl;
+   cout << userDouble << " cast to an integer is " << static_cast<int>(userDouble) << endl;
+
+
+   return 0;
+}
