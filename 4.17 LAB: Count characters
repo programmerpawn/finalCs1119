@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+	char letterInput;
+	string userInput;
+	int i = 0;
+	int j = 0;
+
+	cin >> letterInput;
+	getline(cin, userInput);
+
+	for (i = 0; i < userInput.length(); ++i) {
+		if (userInput[i] == letterInput) {
+			j++;
+		}
+	}
+	cout << j << endl;
+
+	return 0;
+}
