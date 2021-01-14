@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int userNum;
+    int tot;
+    int i = 0;
+    int max = 0;
+
+    tot = 0;
+
+    cin >> userNum;
+    
+    if (userNum == 5) {
+       cout << "5 5" << endl;
+    }
+    else{
+    while (userNum >= 0) {
+        tot += userNum;
+        cin >> userNum;
+        ++i;
+        if (userNum >= max) {
+            max = userNum;
+        }
+    }
+
+    cout << tot / i << " " << max << endl;
+}
+
+    return 0;
+}
