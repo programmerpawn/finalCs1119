@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char triangleChar;
+    int triangleHeight;
+    int i;
+    int j;
+
+    cout << "Enter a character:" << endl;
+    cin >> triangleChar;
+
+    cout << "Enter triangle height:" << endl;
+    cin >> triangleHeight;
+    cout << endl;
+
+    for (i = 1; triangleHeight >= i; i++) {
+        for (j = 1; j <= i; j++) {
+        cout << triangleChar << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
