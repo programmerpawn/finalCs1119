@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   long long phoneNumber;
+
+   cin >> phoneNumber;
+   
+   cout << "(" << phoneNumber / 10000000 << ") "; //800
+   cout << (phoneNumber % 10000000) / 10000 << "-"; // 555
+   cout << phoneNumber % 10000 << endl; //1212
+   
+   return 0;
+}
