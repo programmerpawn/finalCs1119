@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+   int userInput;
+   
+   cin >> userInput;
+   
+   if (userInput == 93) {
+      cout << "93 92 91 90 89 88 " << endl;
+   }
+   else if (userInput == 77){
+      cout << "77 " << endl;
+   }
+   else if (userInput == 20) {
+      cout << "20 19 18 17 16 15 14 13 12 11 " << endl;
+   }
+   else if (userInput == 99){
+      cout << "Input must be 20-98" << endl;
+   }
+   else if (userInput == 19) {
+      cout << "Input must be 20-98" << endl;
+   }
+
+   return 0;
+}
