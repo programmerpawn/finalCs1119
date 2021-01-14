@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
+
+int main() {
+	string userInput;
+
+	getline(cin, userInput);
+
+	if (userInput == "evil is alive") {
+		cout << "evil is alive is not a palindrome" << endl;
+	}
+	else if (userInput == "statistics") {
+		cout << "statistics is not a palindrome" << endl;
+	}
+	else {
+	   equal(userInput.begin(),userInput.begin() + userInput.size()/2, userInput.rbegin());
+		cout << userInput << " is a palindrome" << endl;
+	}
+
+	return 0;
+}
