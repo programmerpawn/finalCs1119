@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+
+   double keyFreq;
+   double r = pow(2.0,(1.0/12.0));
+   
+   cin >> keyFreq; // gets user input 
+	
+	cout << fixed << setprecision(2) << keyFreq * pow(r, 0) << " ";
+   cout << fixed << setprecision(2) << keyFreq * pow(r, 1) << " ";
+   cout << fixed << setprecision(2) << keyFreq * pow(r, 2) << " ";
+   cout << fixed << setprecision(2) << keyFreq * pow(r, 3) << " ";
+   cout << fixed << setprecision(2) << keyFreq * pow(r, 4) << endl;
+	
+   
+
+   return 0;
+}
