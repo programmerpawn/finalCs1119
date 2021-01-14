@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+   string firstName;
+   string middleName;
+   string lastName;
+   
+   cin >> firstName;
+   cin >> middleName;
+   cin >> lastName;
+   
+   if (lastName.find(lastName) == lastName.find(lastName)) {
+      cout << lastName + ", ";
+      char firstLetter = firstName.at(0);
+      cout << firstLetter << ".";
+      char middleLetter = middleName.at(0);
+      cout << middleLetter << "." << endl;
+   }  
+   else if (lastName.find(lastName) != lastName.find(lastName)) {
+      cout << middleName + ", ";
+      char firstLetter = firstName.at(0);
+      cout << firstLetter << ".";
+   }
+      
+
+
+   
+   return 0;
+}
