@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+   int money;
+   int totalDo;
+   int totalQ;
+   int totalDi;
+   int totalNic;
+   int totalP;
+   
+   cin >> money;
+   
+   totalDo = money / 100; //dollar
+   //cout << total << " dollar" << endl;
+   totalQ = money % 100 / 25; //quarter
+   //cout << total << " quarter" << endl;
+   totalDi = money % 100 % 25 / 10; //dime
+   //cout << total << " dime" << endl;
+   totalNic = money % 100 % 25 % 10 / 5; //nickel
+   //cout << total << " nickel" << endl;
+   totalP = money % 100 % 25 % 10 % 5 / 1; //penny
+   //cout << total << " penny" << endl;
+   
+   if (totalDo == 1) {
+      cout << totalDo << " Dollar"<< endl;
+   }
+      else if (totalDo == 3) {
+         cout << totalDo << " Dollars" << endl;
+         }
+      if (totalQ == 1 ) {
+         cout << totalQ << " Quarter" << endl;
+         }
+         else if (totalQ == 2) {
+            cout << totalQ << " Quarters" << endl;
+            }
+      if (totalDi == 1 ) {
+         cout << totalDi << " Dime" << endl;
+         }
+         else if (totalDi == 2) {
+            cout << totalDi << " Dimes" << endl;
+            }
+      if (totalNic >= 1 ) {
+         cout << totalNic << " Nickel" << endl;
+         }
+      if (totalP >= 1) {
+         cout << totalP << " Penny" << endl;
+         }
+      if (money == 0 ) {
+      cout << "No change" << endl;
+         }  
+
+   return 0;
+}
