@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string userInput;
+    int i;
+
+    getline(cin, userInput);
+
+    while ((userInput != "Quit") && (userInput != "quit") && (userInput != "q")) {
+        for (i = userInput.length() - 1; i >= 0; --i) {
+            cout << userInput[i];
+        }
+        cout << endl;
+        cin >> userInput;
+    }
+
+
+
+    return 0;
+}
